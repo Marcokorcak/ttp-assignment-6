@@ -1,24 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import axios from 'axios';
+import ZipCode from './Components/ZipCode.js';
+import CitySearch from './Components/CitySearch.js';
+
+function City(props) {
+  return (<div>This is the City component</div>)
+}
+
+function ZipCodeSearch(props) {
+  return (<div>This is the ZipSearchField component</div>);
+}
+
 
 function App() {
-  return (
+  return ( 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+          <h2>Zip Code and City Search</h2>
+      </div>
+      <br></br>
+      <ZipCode />
+      <br></br>
+      <CitySearch />
     </div>
+    
   );
 }
 
