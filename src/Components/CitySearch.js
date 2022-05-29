@@ -23,7 +23,7 @@ class SearchCity extends Component {
                 const newInfo = response.data;
                 this.setState({data: newInfo});
             })
-            .catch(err => console.log(err));
+            .catch(err => console.log("could not be found"));
     }
 
     componentDidUpdate = (prevProps, prevState) => {
