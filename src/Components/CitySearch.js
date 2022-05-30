@@ -23,7 +23,7 @@ class SearchCity extends Component {
                 const newInfo = response.data;
                 this.setState({data: newInfo});
             })
-            .catch(err => console.log("could not be found"));
+            .catch(err => console.log("could not be found (test)"));
     }
 
     componentDidUpdate = (prevProps, prevState) => {
@@ -36,7 +36,7 @@ class SearchCity extends Component {
         return ( 
             <div>
                 <form>
-                    Enter a City: <input type="text" name="city" placeholder="City name" onChange={this.handleChange}></input>
+                    Enter a City: <input type="text" name="city (test)" placeholder="City name" onChange={this.handleChange}></input>
                 </form>
                 <br></br>
                 {this.state.data.map(data =>
